@@ -16,9 +16,11 @@ const scores = [
 // 66
 // ==========================================
 
+console.log("------ OPDRACHT 1A")
 
-
-
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score)
+}
 
 // ==========================================
 // Opdracht 1b
@@ -32,7 +34,30 @@ const scores = [
 // D
 // ==========================================
 
+console.log("------ OPDRACHT 1B")
 
+for (let i = 0; i < scores.length; i++) {
+    switch (true) {
+        case (scores[i].score < 60):
+            console.log("F");
+            break;
+        case (scores[i].score < 70):
+            console.log("D");
+            break;
+        case (scores[i].score < 80):
+            console.log("C");
+            break;
+        case (scores[i].score < 90):
+            console.log("B");
+            break;
+        case (scores[i].score <= 100):
+            console.log("A");
+            break;
+        default:
+            console.log("Invalid");
+            break;
+    }
+}
 
 
 
