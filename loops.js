@@ -10,8 +10,14 @@
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
+console.log("----- OPDRACHT 1")
 
 
+const character = "*";
+
+for (let i = 0; i < 5; i++) {
+    console.log(`${character.repeat(i + 1)}`)
+}
 
 
 
@@ -24,9 +30,15 @@
 // loop...
 // klaar!
 // ==========================================
-
-
-
+console.log("----- OPDRACHT 2")
+for (let i = 0; i < 5; i++) {
+    if (i <= 3) {
+        console.log("loop...");
+    }
+    else {
+        console.log("klaar!")
+    }
+}
 
 
 // ==========================================
@@ -44,8 +56,19 @@
 // >> 8
 // >> 9
 // ==========================================
+console.log("----- OPDRACHT 3")
 
-
+for (let i = 0; i < 10; i++) {
+    if (i < 3) {
+        console.log(i);
+    }
+    else if (i < 6) {
+        console.log("> " + i);
+    }
+    else {
+        console.log(">> " + i);
+    }
+}
 
 
 
@@ -87,5 +110,20 @@
 // etc.
 // ==========================================
 
+console.log("----- OPDRACHT 4")
 
-
+for (let i = 0; i < 101; i++) {
+    switch (true) {
+        case (i%3===0 && i%5===0):
+            console.log("FizzBuzz");
+            break;
+        case (i%3===0):
+            console.log("Fizz");
+            break;
+        case (i%5===0):
+            console.log("Buzz");
+            break;
+        default:
+            console.log(i)
+    }
+}
